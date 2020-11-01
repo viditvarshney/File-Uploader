@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/File-Uploader/static/css/main.602e6d05.chunk.css",
+    "main.js": "/File-Uploader/static/js/main.1b741d7c.chunk.js",
+    "main.js.map": "/File-Uploader/static/js/main.1b741d7c.chunk.js.map",
+    "runtime-main.js": "/File-Uploader/static/js/runtime-main.540185ac.js",
+    "runtime-main.js.map": "/File-Uploader/static/js/runtime-main.540185ac.js.map",
+    "static/css/2.bc3406cf.chunk.css": "/File-Uploader/static/css/2.bc3406cf.chunk.css",
+    "static/js/2.b23a4182.chunk.js": "/File-Uploader/static/js/2.b23a4182.chunk.js",
+    "static/js/2.b23a4182.chunk.js.map": "/File-Uploader/static/js/2.b23a4182.chunk.js.map",
+    "index.html": "/File-Uploader/index.html",
+    "static/css/2.bc3406cf.chunk.css.map": "/File-Uploader/static/css/2.bc3406cf.chunk.css.map",
+    "static/css/main.602e6d05.chunk.css.map": "/File-Uploader/static/css/main.602e6d05.chunk.css.map",
+    "static/js/2.b23a4182.chunk.js.LICENSE.txt": "/File-Uploader/static/js/2.b23a4182.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/File-Uploader/static/media/excelmock3.f05fecce.jpg",
+    "static/media/font-awesome.min.css": "/File-Uploader/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.540185ac.js",
+    "static/css/2.bc3406cf.chunk.css",
+    "static/js/2.b23a4182.chunk.js",
+    "static/css/main.602e6d05.chunk.css",
+    "static/js/main.1b741d7c.chunk.js"
+  ]
+}
