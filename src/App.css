@@ -1,38 +1,75 @@
-.App {
+.ExcelTable2007 {
+  border: 1px solid #b0cbef;
+  border-width: 1px 0px 0px 1px;
+  font-size: 11pt;
+  font-family: Calibri;
+  font-weight: 100;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.ExcelTable2007 TH {
+  background-image: url(excel-2007-header-bg.gif);
+  background-repeat: repeat-x;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #9eb6ce;
+  border-width: 0px 1px 1px 0px;
+  height: 17px;
+  line-height: 17px;
+}
+
+.ExcelTable2007 TD {
+  border: 0px;
+  background-color: white;
+  padding: 0px 4px 0px 2px;
+  border: 1px solid #d0d7e5;
+  border-width: 0px 1px 1px 0px;
+}
+
+.ExcelTable2007 TD B {
+  border: 0px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.ExcelTable2007 TD.heading {
+  background-color: #e4ecf7;
+  text-align: center;
+  border: 1px solid #9eb6ce;
+  border-width: 0px 1px 1px 0px;
+  font-weight: bold;
+}
+
+.ExcelTable2007 TH.heading {
+  background-image: url(excel-2007-header-left.gif);
+  background-repeat: none;
+}
+
+TH {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.jumbotron-background {
+  background-image: url(excelmock3.jpg);
+  border-radius: 0rem !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jumbotron-button {
+  color: #fff !important;
+  background-color: transparent !important;
+  border-color: lightgrey !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jumbotron-button:hover {
+  color: #fff !important;
+  background-color: #5a6268 !important;
+  border-color: #545b62 !important;
+}
+
+.restrict-card {
+  height: 175px;
+  overflow-y: overlay;
 }
