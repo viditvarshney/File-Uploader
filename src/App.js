@@ -160,11 +160,38 @@ class App extends Component {
                 {console.log(this.state.cols)}
                 {/* {this.fileData()} */}
                 <div>
-                  <h2>File Details:</h2>
-                  <p>Total Invoices: {this.state.rows.length - 1}</p>
+                  <table>
+                    <tr>
+                      <th>
+                        <td>Parameters</td>
+                      </th>
+                      <th>
+                        <td>Values</td>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Total Invoices</td>
+                      <td>{this.state.rows.length - 1}</td>
+                    </tr>
+                    <tr>
+                      <td>Invalid Invoice</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>Total Valid Invoice</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td>Distict Vendors</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>Total Amount</td>
+                      <td>-2580</td>
+                    </tr>
+                  </table>
                   {/* <p>File Name: {this.state.fileName}</p>
                   <p>File Type: {this.state.fileType}</p> */}
-                  <p>Total</p>
 
                   {/* <p>
                       Last Modified:{" "}
