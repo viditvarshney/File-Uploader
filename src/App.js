@@ -25,6 +25,7 @@ class App extends Component {
       isFormInvalid: false,
       rows: null,
       cols: null,
+      data: null,
     };
     this.fileHandler = this.fileHandler.bind(this);
     this.toggle = this.toggle.bind(this);
@@ -54,9 +55,9 @@ class App extends Component {
       let fileObj = event.target.files[0];
       let fileName = fileObj.name;
       let fileType = fileObj.type;
-
-      console.log(fileType);
-      console.log(fileName);
+      this.setState({ data: fileObj });
+      console.log("FileType: " + fileType);
+      console.log("FileName: " + fileName);
 
       //check for file extension and pass only if it is .xlsx and display error message otherwise
       if (
@@ -85,28 +86,6 @@ class App extends Component {
 
   openFileBrowser = () => {
     this.fileInput.current.click();
-  };
-
-  fileData = () => {
-    if (this.state.fileObj) {
-      return (
-        <div>
-          <h2>File Details:</h2>
-          <p>File Name: {this.state.fileObj.name}</p>
-          <p>File Type: {this.state.fileObj.type}</p>
-          <p>
-            Last Modified: {this.state.fileObj.lastModifiedDate.toDateString()}
-          </p>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <br />
-          <h4>Choose before Pressing the Upload button</h4>
-        </div>
-      );
-    }
   };
 
   render() {
@@ -177,20 +156,26 @@ class App extends Component {
                   tableClassName="ExcelTable2007"
                   tableHeaderRowClass="heading"
                 />
+                {console.log(this.state.rows)}
+                {console.log(this.state.cols)}
                 {/* {this.fileData()} */}
+                <div>
+                  <h2>File Details:</h2>
+                  <p>Total Invoices: {this.state.rows.length - 1}</p>
+                  {/* <p>File Name: {this.state.fileName}</p>
+                  <p>File Type: {this.state.fileType}</p> */}
+                  <p>Total</p>
+
+                  {/* <p>
+                      Last Modified:{" "}
+                      {this.state.fileObj.lastModifiedDate.toDateString()}
+                    </p> 
+                  */}
+                </div>
               </Card>
             </div>
           )}
         </Container>
-        <div>
-          <h2>File Details:</h2>
-          <p>File Name: {this.state.fileName}</p>
-          <p>File Type: {this.state.fileType}</p>
-          {/* <p>
-              Last Modified:{" "}
-              {this.state.fileObj.lastModifiedDate.toDateString()}
-            </p> */}
-        </div>
       </div>
     );
   }
